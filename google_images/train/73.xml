@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>73.jpg</filename>
+	<path>/Users/hluong/PycharmProjects/ObjectRecognition/google_images/images/73.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>corgi</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>199</xmin>
+			<ymin>51</ymin>
+			<xmax>579</xmax>
+			<ymax>232</ymax>
+		</bndbox>
+	</object>
+</annotation>
