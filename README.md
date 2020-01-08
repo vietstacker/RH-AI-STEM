@@ -18,7 +18,8 @@
 ## Setting up environments
 
 - TODO: Download protoc
-- TODO: Download tensorflow/models
+- Download tensorflow/models
+	- $ git clone https://github.com/tensorflow/models.git
 - Creating python files from proto files:
 	- $ cd models/research
 	- $ <path_to_protoc> object_detection/protos/*.proto --python_out=.
@@ -54,6 +55,6 @@
 - Run:
 	- $ python corgi_detection.py
 
-## NOTES:
+## Notes:
 
 - Change the backend of matplotlib in corgi_detection.py to a relevant one of running machine in order to using matplotlib for image rendering
