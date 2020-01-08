@@ -17,12 +17,14 @@
 
 ## Setting up environments
 
-- TODO: Download protoc
+- Download protobuf:
+	- $ Download protobuf 3.11.2 for linux within this link: https://github.com/protocolbuffers/protobuf/releases
+	- $ unzip <protobuf_linux>
 - Download tensorflow/models
 	- $ git clone https://github.com/tensorflow/models.git
 - Creating python files from proto files:
 	- $ cd models/research
-	- $ <path_to_protoc> object_detection/protos/*.proto --python_out=.
+	- $ <path_to_protobuf> object_detection/protos/*.proto --python_out=.
 - Add paths to environment variables:
 	- $ export PYTHONPATH=$PYTHONPATH:$(pwd)/models/research
 	- $ export PYTHONPATH=$PYTHONPATH:$(pwd)/models/research/object_detection
