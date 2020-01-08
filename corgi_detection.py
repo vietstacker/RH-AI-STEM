@@ -16,9 +16,10 @@ from object_detection.utils import ops as utils_ops
 
 
 # Path to labels
-MODEL_NAME = '/Users/hluong/PycharmProjects/CorgiRecognition/models/research/object_detection/inference_graph_corgi'
+CURRENT_PATH = os.getcwd()
+MODEL_NAME = CURRENT_PATH + '/object_detection/inference_graph_corgi'
 PATH_TO_FROZEN_GRAPH = MODEL_NAME + '/frozen_inference_graph.pb'
-PATH_TO_LABELS = '/Users/hluong/PycharmProjects/CorgiRecognition/models/research/object_detection/corgi_training/corgi.pbtxt'
+PATH_TO_LABELS = CURRENT_PATH + '/object_detection/corgi_training/corgi.pbtxt'
 
 # Initialize a tensorflow graph
 detection_graph = tf.Graph()
