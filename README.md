@@ -53,3 +53,7 @@
 
 - Run:
 	- $ python corgi_detection.py
+
+## NOTES:
+
+- Change the backend of matplotlib in corgi_detection.py to a relevant one of running machine in order to using matplotlib for image rendering
