@@ -17,9 +17,9 @@ from object_detection.utils import ops as utils_ops
 
 # Path to labels
 CURRENT_PATH = os.getcwd()
-MODEL_NAME = CURRENT_PATH + '/object_detection/inference_graph_corgi'
+MODEL_NAME = CURRENT_PATH + '/models/research/object_detection/inference_graph_corgi'
 PATH_TO_FROZEN_GRAPH = MODEL_NAME + '/frozen_inference_graph.pb'
-PATH_TO_LABELS = CURRENT_PATH + '/object_detection/corgi_training/corgi.pbtxt'
+PATH_TO_LABELS = CURRENT_PATH + '/models/research/object_detection/corgi_training/corgi.pbtxt'
 
 # Initialize a tensorflow graph
 detection_graph = tf.Graph()
@@ -40,7 +40,7 @@ def load_image_into_numpy_array(image):
 
 
 # For the sake of simplicity we will use only 2 images:
-PATH_TO_TEST_IMAGES_DIR = '/Users/hluong/PycharmProjects/CorgiRecognition/test_corgi_images'
+PATH_TO_TEST_IMAGES_DIR = CURRENT_PATH + '/test_corgi_images'
 TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i)) for i in range(1, 3)]
 
 # Size, in inches, of the output images.
