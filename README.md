@@ -1,7 +1,9 @@
 # RH-AI-STEM
 
 ## Pre-requisites
-- Install pip, Cython
+- Install brew:
+	- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+- Install pip, Cython, wget
 - Install virtualenv, Python3:
 	- TODO: Install Python3, git
 	- $ python3 -m venv ./venv
