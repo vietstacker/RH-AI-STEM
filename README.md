@@ -1,7 +1,7 @@
 # RH-AI-STEM
 
 ## Pre-requisites
-
+- Install pip, Cython
 - Install virtualenv, Python3:
 	- TODO: Install Python3, git
 	- $ python3 -m venv ./venv
