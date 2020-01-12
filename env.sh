@@ -8,11 +8,11 @@ python3 -m venv ./venv
 source ./venv/bin/activate
 
 # Install following packages:
-pip install --user Cython
 pip install --user contextlib2
 pip install --user pillow
 pip install --user lxml
 pip install --user matplotlib
+pip install --user Cython
 
 # Install tensorflow 1.14:
 pip install tensorflow==1.14
