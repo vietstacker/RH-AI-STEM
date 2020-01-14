@@ -14,6 +14,7 @@
 	- pip install Cython
 	
 ## Setting up environments
+- Clone this directory to somewhere you like
 - Run the command:
 	- bash env.sh
 
