@@ -10,7 +10,9 @@
 - Install virtualenv, Python3:
 	- $ python3 -m venv ./venv
 	- $ source ./venv/bin/activate
-
+- Install Cython:
+	- pip install Cython
+	
 ## Setting up environments
 - Run the command:
 	- bash env.sh
