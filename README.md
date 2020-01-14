@@ -1,6 +1,6 @@
 # RH-AI-STEM
 
-## Pre-requisites
+## Pre-requisites on an empty MacOS
 - Install brew:
 	- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 - Install pip, Cython, wget:
@@ -10,42 +10,10 @@
 - Install virtualenv, Python3:
 	- $ python3 -m venv ./venv
 	- $ source ./venv/bin/activate
-- Install following packages:
-	- $ pip install --user Cython
-	- $ pip install --user contextlib2
-	- $ pip install --user pillow
-	- $ pip install --user lxml
-	- $ pip install --user matplotlib
-- Install tensorflow 1.14:
-	- $ pip install tensorflow==1.14
 
 ## Setting up environments
-
-- Download protobuf:
-	- $ Download protobuf 3.11.2 for linux within this link: https://github.com/protocolbuffers/protobuf/releases
-	- $ unzip <protobuf_linux>
-- Download tensorflow/models
-	- $ git clone https://github.com/tensorflow/models.git
-- Creating python files from proto files:
-	- $ cd models/research
-	- $ <path_to_protobuf> object_detection/protos/*.proto --python_out=.
-- Add paths to environment variables:
-	- $ export PYTHONPATH=$PYTHONPATH:$(pwd)/models/research
-	- $ export PYTHONPATH=$PYTHONPATH:$(pwd)/models/research/object_detection
-	- $ export PYTHONPATH=$PYTHONPATH:$(pwd)/models/research/slim
-- Place cocoapi into models/research:
-	- $ git clone https://github.com/cocodataset/cocoapi.git
-	- $ cd cocoapi/PythonAPI
-	- $ make
-	- $ cp -r pycocotools $(pwd)/models/research/
-- Install object detection API:
-	- $ cd models/research
-	- $ python setup.py build
-	- $ python setup.py install
-- Create corgi_training folder:
-	- $ mkdir models/research/object_detection/corgi_training
-- Copy corgi.config and corgi.pbtxt into corgi_training:
-	- $ cp corgi.config corgi.pbtxt models/research/object_detection/corgi_training
+- Run the command:
+	- bash env.sh
 
 ## Traning Corgi models
 
