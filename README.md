@@ -3,9 +3,11 @@
 ## Pre-requisites
 - Install brew:
 	- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-- Install pip, Cython, wget
+- Install pip, Cython, wget:
+	- brew install pip
+	- brew install wget
+	- brew install python3
 - Install virtualenv, Python3:
-	- TODO: Install Python3, git
 	- $ python3 -m venv ./venv
 	- $ source ./venv/bin/activate
 - Install following packages:
