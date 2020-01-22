@@ -30,6 +30,7 @@
 ## Run testing
 
 - Copy testing script into tensorflow models:
+	- $ cd ../../..
 	- $ cp corgi_detection.py models/research
 - Run:
 	- $ python models/research/corgi_detection.py
